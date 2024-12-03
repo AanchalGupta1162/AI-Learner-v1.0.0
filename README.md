@@ -22,7 +22,7 @@ This project leverages Flask and the YouTube Transcript API for transcript retri
 - **Backend**: Python, Flask (for transcript fetching).
 - **APIs**: 
   - YouTube Transcript API for transcript retrieval.
-  - AI Prompt API for summarization and question generation.
+  - Gemini Nano's Prompt API for summarization and question generation.
 
 ---
 
@@ -83,9 +83,10 @@ The Flask server will start running on `http://127.0.0.1:5000`.
 
 1. Open YouTube and navigate to a video.
 2. Click on the Chrome extension icon in the toolbar.
-3. Enter the YouTube video URL and click **Fetch Transcript**.
-4. Use the **Get Summary** or **Get Questions** buttons to process the transcript.
-5. Results will be displayed in the respective output sections.
+3. Click **Fetch Transcript** to get the transcript.
+4. For the summarization and question generation to work, make sure you are working on Google Chrome Dev or Google Canary and your device has the built-in models installed which are up-to-date and all the required flags are enabled[Prompt API](https://developer.chrome.com/docs/ai/built-in-apis#prompt_api)
+5. Use the **Get Summary** or **Get Questions** buttons to process the transcript.
+6. Results will be displayed in the respective output sections.
 
 ---
 
